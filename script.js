@@ -1,9 +1,10 @@
 document.documentElement.classList.add("js");
+
 const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll("nav a");
 const cursorGlow = document.querySelector(".cursor-glow");
 const themeToggle = document.querySelector(".theme-toggle");
-const themeIcon = document.querySelector(".theme-icon");
+const themeIcon = document.querySelector("#themeIcon");
 const revealItems = document.querySelectorAll(".reveal");
 
 function setActiveLink() {
@@ -33,29 +34,29 @@ function setActiveLink() {
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
-  themeIcon.textContent = theme === "dark" ? "🔆" : "🌙";
+
+  if (themeIcon) {
+    themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
+  }
 }
 
 const savedTheme = localStorage.getItem("theme") || "dark";
+setTheme(savedTheme);
 
-if (themeToggle && themeIcon) {
-  setTheme(savedTheme);
-
+if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
-    setTheme(currentTheme === "dark" ? "light" : "dark");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
   });
 }
-
-themeToggle.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-  setTheme(currentTheme === "dark" ? "light" : "dark");
-});
 
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
 
 window.addEventListener("mousemove", (event) => {
+  if (!cursorGlow) return;
+
   cursorGlow.style.left = `${event.clientX}px`;
   cursorGlow.style.top = `${event.clientY}px`;
 });
@@ -69,7 +70,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.15,
+    threshold: 0.12,
   }
 );
 

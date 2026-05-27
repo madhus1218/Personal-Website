@@ -6,21 +6,21 @@
   --soft: #c7ddd7;
   --accent: #64ffda;
   --accent2: #38bdf8;
-  --card: rgba(13, 32, 28, 0.82);
+  --card: rgba(13, 32, 28, 0.86);
   --border: rgba(100, 255, 218, 0.32);
   --shadow: rgba(0, 0, 0, 0.38);
 }
 
 html[data-theme="light"] {
-  --bg: #f4fbf8;
-  --bg2: #e8f7f1;
+  --bg: #f6fffb;
+  --bg2: #e7f7f0;
   --text: #10201c;
   --muted: #49635c;
   --soft: #284d43;
-  --accent: #009f7a;
+  --accent: #008f70;
   --accent2: #0284c7;
-  --card: rgba(255, 255, 255, 0.82);
-  --border: rgba(0, 159, 122, 0.28);
+  --card: rgba(255, 255, 255, 0.84);
+  --border: rgba(0, 143, 112, 0.28);
   --shadow: rgba(30, 64, 54, 0.16);
 }
 
@@ -60,7 +60,7 @@ body {
   position: fixed;
   top: 1.4rem;
   right: 1.4rem;
-  z-index: 20;
+  z-index: 50;
   width: 44px;
   height: 44px;
   border-radius: 999px;
@@ -153,24 +153,25 @@ nav a.active {
 .icon-links {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.1rem;
   flex-wrap: wrap;
 }
 
 .icon-links a {
   color: var(--muted);
   text-decoration: none;
-  border: 1px solid var(--border);
-  padding: 0.45rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .icon-links a:hover {
   color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
   transform: translateY(-2px);
+}
+
+.icon-links svg {
+  width: 23px;
+  height: 23px;
+  fill: currentColor;
 }
 
 section {
@@ -306,8 +307,8 @@ p,
 
 .js .reveal {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
 .js .reveal.visible {
