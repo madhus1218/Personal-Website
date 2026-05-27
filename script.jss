@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll("nav a");
 const cursorGlow = document.querySelector(".cursor-glow");
@@ -36,7 +37,15 @@ function setTheme(theme) {
 }
 
 const savedTheme = localStorage.getItem("theme") || "dark";
-setTheme(savedTheme);
+
+if (themeToggle && themeIcon) {
+  setTheme(savedTheme);
+
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    setTheme(currentTheme === "dark" ? "light" : "dark");
+  });
+}
 
 themeToggle.addEventListener("click", () => {
   const currentTheme = document.documentElement.getAttribute("data-theme");
