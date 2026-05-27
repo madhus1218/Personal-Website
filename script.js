@@ -40,7 +40,7 @@ function setTheme(theme) {
   }
 }
 
-const savedTheme = localStorage.getItem("theme") || "dark";
+const savedTheme = localStorage.getItem("theme") || "light";
 setTheme(savedTheme);
 
 if (themeToggle) {
