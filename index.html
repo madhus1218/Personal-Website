@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Madhumita Subbiah</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="cursor-glow"></div>
 
+  <button class="theme-toggle" aria-label="Toggle light and dark mode">
+    <span class="theme-icon">☀️</span>
+  </button>
+
   <div class="page">
-    <header class="sidebar">
+    <header class="sidebar reveal">
       <div>
         <div class="profile-row">
           <img src="headshot.jpg" alt="Madhumita Subbiah headshot" class="headshot" />
@@ -32,28 +37,26 @@
 
       <div class="icon-links">
         <a href="https://github.com/madhu1218" target="_blank" aria-label="GitHub">
-          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.38-3.88-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.19 1.18A11.1 11.1 0 0 1 12 6.12c.98 0 1.97.13 2.9.39 2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.79 1.08.79 2.18v3.23c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          GitHub
         </a>
-
         <a href="https://linkedin.com/in/madhusubbiah" target="_blank" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S.02 4.88.02 3.5 1.14 1 2.5 1s2.48 1.12 2.48 2.5ZM.3 8.2h4.4V23H.3V8.2Zm7.1 0h4.22v2.02h.06c.59-1.11 2.03-2.28 4.18-2.28 4.47 0 5.29 2.94 5.29 6.77V23h-4.4v-7.35c0-1.75-.03-4-2.44-4-2.44 0-2.82 1.91-2.82 3.88V23H7.4V8.2Z"/></svg>
+          LinkedIn
         </a>
-
         <a href="mailto:madhumita1218@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13A2.5 2.5 0 0 1 19.5 21h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.5-.3 7.5 5.25L19.5 5.2h-15Zm15.3 2.05-7.08 4.96a1.25 1.25 0 0 1-1.44 0L4.2 7.25V18.5c0 .17.13.3.3.3h15c.17 0 .3-.13.3-.3V7.25Z"/></svg>
+          Email
         </a>
       </div>
     </header>
 
     <main>
-      <section id="about">
+      <section id="about" class="reveal">
         <h3>About</h3>
         <p class="intro">
-          I’m a third-year CS student at Georgia Tech passionate about full-stack software engineering and product development. I enjoy building scalable, user-centered applications that combine thoughtful design, engineering, and real-world impact. Whether it’s developing AI-powered tools, building web platforms, or turning random ideas into actual products, I love the process of creating things that people genuinely enjoy using.
+          I’m a third-year CS student at Georgia Tech passionate about full-stack software engineering and product development. I enjoy building scalable, user-centered applications that combine thoughtful design, engineering, and real-world impact. Whether it’s developing AI-powered tools, building web platforms, or turning random ideas into actual products, I love creating things that people genuinely enjoy using.
         </p>
       </section>
 
-      <section id="education">
+      <section id="education" class="reveal">
         <h3>Education</h3>
         <div class="card dated-card">
           <div class="date">August 2024 — December 2027</div>
@@ -66,7 +69,7 @@
         </div>
       </section>
 
-      <section id="experience">
+      <section id="experience" class="reveal">
         <h3>Experience</h3>
 
         <div class="card dated-card">
@@ -92,7 +95,7 @@
         <div class="card dated-card">
           <div class="date">January 2026 — May 2026</div>
           <div>
-            <h4>LMC 3318: Designing Disease: Modern Media in the Age of Pandemics</h4>
+            <h4>LMC 3318: Designing Disease</h4>
             <p class="role">Teaching Assistant · Georgia Tech Europe</p>
             <p>Supported course logistics, student communication, attendance tracking, Canvas updates, and assignment coordination for a study abroad humanities course.</p>
           </div>
@@ -107,18 +110,9 @@
             <p>Provided detailed feedback on resumes and reflective assignments to improve technical communication and clarity.</p>
           </div>
         </div>
-
-        <div class="card dated-card">
-          <div class="date">September 2024 — May 2025</div>
-          <div>
-            <h4>Office of Undergraduate Education and Student Success</h4>
-            <p class="role">Student Assistant · Georgia Tech</p>
-            <p>Supported student-facing communications, office operations, and event-related tasks for Georgia Tech’s undergraduate education programs.</p>
-          </div>
-        </div>
       </section>
 
-      <section id="research">
+      <section id="research" class="reveal">
         <h3>Research</h3>
 
         <div class="card dated-card">
@@ -139,12 +133,12 @@
             <p>Developed neural network models for radiotherapy dose optimization using voxel-based patient simulation data.</p>
             <p>Reduced model MSE from 5.29 to 0.0004 across 160 training iterations using Monte Carlo-generated radiation datasets.</p>
             <p>Co-authored an IEEE research paper on machine learning approaches for radiotherapy treatment planning and dosage optimization.</p>
-            <a class="project-link" href="research-paper.pdf" target="_blank">Read Research Paper ➜</a>
+            <a class="project-link" href="research-paper.pdf" target="_blank">Read Research Paper →</a>
           </div>
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects" class="reveal">
         <h3>Projects</h3>
 
         <div class="card project-card">
@@ -166,37 +160,39 @@
         </div>
       </section>
 
-      <section id="skills">
+      <section id="skills" class="reveal">
         <h3>Skills</h3>
 
         <div class="skill-category">
           <h4>Technical</h4>
           <div class="skill-grid">
-            <span>Python</span>
-            <span>Java</span>
-            <span>C/C++</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>SQL</span>
-            <span>HTML/CSS</span>
-            <span>React</span>
-            <span>Next.js</span>
-            <span>Node.js</span>
-            <span>Django</span>
-            <span>Firebase</span>
-            <span>TensorFlow</span>
-            <span>PyTorch</span>
-            <span>scikit-learn</span>
-            <span>Hugging Face</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Linux</span>
-            <span>Git</span>
-            <span>SVN</span>
-            <span>PostgreSQL</span>
-            <span>MongoDB</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">Java</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="">C/C++</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="">TypeScript</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="">Next.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">Node.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="">Django</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="">Firebase</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="">TensorFlow</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="">PyTorch</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="">Pandas</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="">NumPy</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="">AWS</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">Linux</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Other</h4>
+          <div class="skill-grid">
             <span>REST APIs</span>
             <span>FHIR</span>
             <span>CI/CD</span>
@@ -204,13 +200,6 @@
             <span>Jama</span>
             <span>Agile/Scrum</span>
             <span>VS Code</span>
-            <span>Figma</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Languages</h4>
-          <div class="skill-grid">
             <span>English</span>
             <span>Tamil</span>
             <span>Telugu</span>
@@ -219,19 +208,17 @@
 
         <div class="skill-category">
           <h4>Certifications</h4>
-            <span><a class="project-link" href="machine-learning-specialization.pdf" target="_blank">Machine Learning Specialization ➜</a></span>
-        </div>
-      </section>
-        
-      <section id="beyond-tech">
-        <h3>Beyond Tech</h3>
-          <p>
-            A few years ago, I randomly had a TikTok video go viral, and ever since then I’ve had a lot of fun experimenting with content creation, editing, and sharing moments from life and travel. I also played volleyball throughout school and still love hopping into pickup games whenever I get the chance. Outside of that, I’m probably watching a TV show I’m way too emotionally invested in, making another playlist I’ll listen to for two weeks straight, or planning my next spontaneous trip. 
-          </p>
-          <p>Fun facts: I've been skydiving & I've been to 21 countries (11% of the world)!</p>
+          <a class="project-link" href="machine-learning-specialization.pdf" target="_blank">Machine Learning Specialization →</a>
         </div>
       </section>
 
+      <section id="beyond-tech" class="reveal">
+        <h3>Beyond Tech</h3>
+        <p>
+          A few years ago, I randomly had a TikTok video go viral, and ever since then I’ve had a lot of fun experimenting with content creation, editing, and sharing moments from life and travel. I also played volleyball throughout school and still love hopping into pickup games whenever I get the chance. Outside of that, I’m probably watching a TV show I’m way too emotionally invested in, making another playlist I’ll listen to for two weeks straight, or planning my next spontaneous trip.
+        </p>
+        <p>Fun facts: I've been skydiving and I've been to 21 countries!</p>
+      </section>
     </main>
   </div>
 
