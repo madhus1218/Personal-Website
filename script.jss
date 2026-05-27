@@ -7,6 +7,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         navLinks.forEach((link) => {
           link.classList.remove("active");
+
           if (link.getAttribute("href") === `#${entry.target.id}`) {
             link.classList.add("active");
           }
