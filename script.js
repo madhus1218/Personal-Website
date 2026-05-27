@@ -36,7 +36,7 @@ function setTheme(theme) {
   localStorage.setItem("theme", theme);
 
   if (themeIcon) {
-    themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
+    themeIcon.textContent = theme === "dark" ? "🔆" : "🌙";
   }
 }
 
