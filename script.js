@@ -33,7 +33,7 @@ function setActiveLink() {
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
-  themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
+  themeIcon.textContent = theme === "dark" ? "🔆" : "🌙";
 }
 
 const savedTheme = localStorage.getItem("theme") || "dark";
