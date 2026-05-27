@@ -6,6 +6,7 @@ const cursorGlow = document.querySelector(".cursor-glow");
 const themeToggle = document.querySelector(".theme-toggle");
 const themeIcon = document.querySelector("#themeIcon");
 const revealItems = document.querySelectorAll(".reveal");
+const heroBadges = document.querySelectorAll(".hero-badges span");
 
 function setActiveLink() {
   let currentSection = "";
@@ -55,10 +56,18 @@ window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
 
 window.addEventListener("mousemove", (event) => {
-  if (!cursorGlow) return;
+  if (cursorGlow) {
+    cursorGlow.style.left = `${event.clientX}px`;
+    cursorGlow.style.top = `${event.clientY}px`;
+  }
 
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
+  heroBadges.forEach((badge, index) => {
+    const speed = (index + 1) * 0.008;
+    const x = (window.innerWidth / 2 - event.clientX) * speed;
+    const y = (window.innerHeight / 2 - event.clientY) * speed;
+
+    badge.style.transform = `translate(${x}px, ${y}px)`;
+  });
 });
 
 const observer = new IntersectionObserver(
