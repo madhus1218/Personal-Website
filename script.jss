@@ -1,20 +1,18 @@
 const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll("nav a");
+const cursorGlow = document.querySelector(".cursor-glow");
 
 function setActiveLink() {
   let currentSection = "";
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
 
     if (window.scrollY >= sectionTop - 180) {
       currentSection = section.getAttribute("id");
     }
 
-    if (
-      window.innerHeight + window.scrollY >= document.body.offsetHeight - 5
-    ) {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
       currentSection = sections[sections.length - 1].getAttribute("id");
     }
   });
@@ -30,3 +28,8 @@ function setActiveLink() {
 
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
+
+window.addEventListener("mousemove", (event) => {
+  cursorGlow.style.left = `${event.clientX}px`;
+  cursorGlow.style.top = `${event.clientY}px`;
+});

@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="cursor-glow"></div>
+
   <div class="page">
     <header class="sidebar">
       <div>
@@ -47,15 +49,13 @@
       <section id="about">
         <h3>About</h3>
         <p class="intro">
-          I’m a third-year Computer Science student at Georgia Tech passionate about full-stack software engineering and product development. I enjoy building
-          scalable, user-centered applications that combine thoughtful design, engineering, and real-world impact, with experience across AI, web
-          technologies, and data-driven systems.
+          I’m a third-year Computer Science student at Georgia Tech passionate about full-stack software engineering and product development. I enjoy building scalable, user-centered applications that combine thoughtful design, engineering, and real-world impact, with experience across AI, web technologies, and data-driven systems.
         </p>
       </section>
 
       <section id="education">
         <h3>Education</h3>
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">August 2024 — December 2027</div>
           <div>
             <h4>Georgia Institute of Technology</h4>
@@ -69,7 +69,7 @@
       <section id="experience">
         <h3>Experience</h3>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">Summer 2026</div>
           <div>
             <h4>Raytheon Technologies</h4>
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">Summer 2025</div>
           <div>
             <h4>Saama Technologies</h4>
@@ -89,7 +89,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">January 2026 — May 2026</div>
           <div>
             <h4>LMC 3318: Designing Disease: Modern Media in the Age of Pandemics</h4>
@@ -98,7 +98,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">August 2025 — December 2025</div>
           <div>
             <h4>CS 1100: Freshman Leap Seminar</h4>
@@ -108,7 +108,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">September 2024 — May 2025</div>
           <div>
             <h4>Office of Undergraduate Education and Student Success</h4>
@@ -121,7 +121,7 @@
       <section id="research">
         <h3>Research</h3>
 
-        <div class="card">
+        <div class="card dated-card">
           <div class="date">Summer 2024</div>
           <div>
             <h4>HEALTH-Engine Lab</h4>
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-                <div class="card">
+        <div class="card dated-card">
           <div class="date">January 2025 — May 2026</div>
           <div>
             <h4>Health Informatics on FHIR Lab</h4>
@@ -142,34 +142,27 @@
             <p>Standardized 20+ healthcare attributes into FHIR profiles and deployed scalable FHIR servers with REST endpoints supporting queries over 1M+ anonymized patient records.</p>
           </div>
         </div>
-
       </section>
 
       <section id="projects">
         <h3>Projects</h3>
 
-        <div class="card">
-          <div>
-            <h4>BuzzOrg</h4>
-            <p>Leading a team of 7 to build a MERN-stack centralized application portal for 70+ Georgia Tech organizations and clubs.</p>
-            <p>Implemented authentication, reviewer dashboards, and bulk decision tools, reducing review time per batch by 45%.</p>
-          </div>
+        <div class="card project-card">
+          <h4>BuzzOrg</h4>
+          <p>Leading a team of 7 to build a MERN-stack centralized application portal for 70+ Georgia Tech organizations and clubs.</p>
+          <p>Implemented authentication, reviewer dashboards, and bulk decision tools, reducing review time per batch by 45%.</p>
         </div>
 
-        <div class="card">
-          <div>
-            <h4>Waypoint</h4>
-            <p>Built an AI-powered travel tracking platform using Next.js and PostgreSQL to generate and share animated travel histories.</p>
-            <p>Implemented DBSCAN-based trip inference pipelines using Apple and Google photo metadata and geospatial clustering.</p>
-          </div>
+        <div class="card project-card">
+          <h4>Waypoint</h4>
+          <p>Built an AI-powered travel tracking platform using Next.js and PostgreSQL to generate and share animated travel histories.</p>
+          <p>Implemented DBSCAN-based trip inference pipelines using Apple and Google photo metadata and geospatial clustering.</p>
         </div>
 
-        <div class="card">
-          <div>
-            <h4>Chronos</h4>
-            <p>Developed a full-stack scheduling application that automatically creates Google Calendar events from uploaded documents.</p>
-            <p>Integrated a custom-trained named entity recognition model to extract dates, titles, and scheduling information from files.</p>
-          </div>
+        <div class="card project-card">
+          <h4>Chronos</h4>
+          <p>Developed a full-stack scheduling application that automatically creates Google Calendar events from uploaded documents.</p>
+          <p>Integrated a custom-trained named entity recognition model to extract dates, titles, and scheduling information from files.</p>
         </div>
       </section>
 
@@ -179,44 +172,38 @@
         <div class="skill-category">
           <h4>Technical</h4>
           <div class="skill-grid">
-              <span>Python</span>
-              <span>Java</span>
-              <span>C/C++</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>SQL</span>
-              <span>HTML/CSS</span>
-
-              <span>React</span>
-              <span>Next.js</span>
-              <span>Node.js</span>
-              <span>Django</span>
-              <span>Firebase</span>
-
-              <span>TensorFlow</span>
-              <span>PyTorch</span>
-              <span>scikit-learn</span>
-              <span>Hugging Face</span>
-              <span>Pandas</span>
-              <span>NumPy</span>
-
-              <span>AWS</span>
-              <span>Docker</span>
-              <span>Linux</span>
-              <span>Git</span>
-              <span>GitHub Actions</span>
-              <span>SVN</span>
-
-              <span>PostgreSQL</span>
-              <span>MongoDB</span>
-              <span>REST APIs</span>
-              <span>FHIR</span>
-
-              <span>CI/CD</span>
-              <span>Jira</span>
-              <span>Agile/Scrum</span>
-              <span>VS Code</span>
-      
+            <span>Python</span>
+            <span>Java</span>
+            <span>C/C++</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>SQL</span>
+            <span>HTML/CSS</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Django</span>
+            <span>Firebase</span>
+            <span>TensorFlow</span>
+            <span>PyTorch</span>
+            <span>scikit-learn</span>
+            <span>Hugging Face</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>Git</span>
+            <span>GitHub Actions</span>
+            <span>SVN</span>
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>REST APIs</span>
+            <span>FHIR</span>
+            <span>CI/CD</span>
+            <span>Jira</span>
+            <span>Agile/Scrum</span>
+            <span>VS Code</span>
           </div>
         </div>
 
@@ -235,28 +222,19 @@
             <span>Machine Learning Specialization</span>
           </div>
         </div>
-
       </section>
 
       <section id="beyond-tech">
         <h3>Beyond Tech</h3>
-        <div class="card">
-          <div class="date">Outside CS</div>
-          <div>
-            <h4>Interests</h4>
-            <p>
-              Outside of computer science, I enjoy playing volleyball, creating content,
-              traveling, exploring new cities, and finding creative ways to document experiences.
-            </p>
-            <div class="skill-grid beyond-grid">
-              <span>Volleyball</span>
-              <span>Content Creation</span>
-              <span>Traveling</span>
-            </div>
-          </div>
+          <p>
+            Outside of computer science, I enjoy playing volleyball, creating content,
+            traveling, exploring new cities, and finding creative ways to document experiences.
+          </p>
         </div>
       </section>
-
+      
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
