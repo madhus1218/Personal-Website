@@ -11,7 +11,7 @@
   --shadow: rgba(0, 0, 0, 0.38);
 }
 
-html[data-theme="dark"] {
+html[data-theme="light"] {
   --bg: #f6fffb;
   --bg2: #e7f7f0;
   --text: #10201c;
@@ -366,12 +366,40 @@ p,
 .project-card h4 {
   color: var(--accent);
   margin-bottom: 0.75rem;
-  .tech-stack {
-    color: var(--accent);
-    font-size: 0.82rem;
-    font-weight: 700;
-    margin: 0 0 0.75rem;
-  }
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.project-tech span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid var(--border);
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.project-tech span:hover {
+  transform: translateY(-3px);
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.18);
+}
+
+.project-tech img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .date {
@@ -665,11 +693,13 @@ p,
     height: 300px;
   }
 
-  .skill-grid {
+  .skill-grid,
+  .project-tech {
     gap: 0.5rem;
   }
 
-  .skill-grid span {
+  .skill-grid span,
+  .project-tech span {
     font-size: 0.76rem;
     padding: 0.38rem 0.62rem;
   }
@@ -707,7 +737,8 @@ p,
     height: 38px;
   }
 
-  .skill-grid span {
+  .skill-grid span,
+  .project-tech span {
     font-size: 0.72rem;
   }
 }
