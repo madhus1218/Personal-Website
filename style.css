@@ -219,25 +219,9 @@ p,
 
 .hero-section {
   position: relative;
-  overflow: hidden;
-  border-radius: 28px;
+  overflow: visible;
+  border-radius: 0;
   padding-bottom: 4.4rem;
-}
-
-.hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.04) 45%,
-      transparent 100%
-    );
-  transform: translateX(-100%);
-  animation: heroSweep 8s linear infinite;
-  pointer-events: none;
 }
 
 @keyframes heroSweep {
