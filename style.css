@@ -11,7 +11,7 @@
   --shadow: rgba(0, 0, 0, 0.38);
 }
 
-html[data-theme="light"] {
+html[data-theme="dark"] {
   --bg: #f6fffb;
   --bg2: #e7f7f0;
   --text: #10201c;
@@ -366,6 +366,12 @@ p,
 .project-card h4 {
   color: var(--accent);
   margin-bottom: 0.75rem;
+  .tech-stack {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+  }
 }
 
 .date {
