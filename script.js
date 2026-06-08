@@ -84,3 +84,25 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
+
+const tabButtons = document.querySelectorAll(".tab-button");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetTab = button.dataset.tab;
+    const parentSection = button.closest("section");
+
+    const sectionButtons = parentSection.querySelectorAll(".tab-button");
+    const sectionContents = parentSection.querySelectorAll(".tab-content");
+
+    sectionButtons.forEach((btn) => btn.classList.remove("active"));
+    sectionContents.forEach((content) => content.classList.remove("active"));
+
+    button.classList.add("active");
+
+    const targetContent = parentSection.querySelector(`#${targetTab}`);
+    if (targetContent) {
+      targetContent.classList.add("active");
+    }
+  });
+});

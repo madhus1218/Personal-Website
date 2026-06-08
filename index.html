@@ -32,6 +32,7 @@
           <a href="#experience">--- Experience</a>
           <a href="#research">--- Research</a>
           <a href="#projects">--- Projects</a>
+          <a href="#case-analysis">--- Case Analysis</a>
           <a href="#skills">--- Skills</a>
           <a href="#beyond-tech">--- Beyond Tech</a>
         </nav>
@@ -91,63 +92,82 @@
       <section id="experience" class="reveal">
         <h3>Experience</h3>
 
-        <div class="card dated-card">
-          <div class="date">Summer 2026</div>
-          <div>
-            <h4>Raytheon Technologies</h4>
-            <p class="role">Software Engineering Intern · Melbourne, FL</p>
-            <p>Worked on AESA weather radar systems by optimizing airborne radar detection algorithms, improving turbulence detection range from 40 to 80 nautical miles.</p>
-            <p>Developed an agentic RAG-based LLM to automate Open Problem Report generation and built retrieval and prompt pipelines using proprietary engineering data.</p>
+        <div class="tabs">
+          <button class="tab-button active" data-tab="swe-experience">Software Engineering</button>
+          <button class="tab-button" data-tab="pm-experience">Product / Strategy</button>
+        </div>
+
+        <div class="tab-content active" id="swe-experience">
+          <div class="card dated-card">
+            <div class="date">Summer 2026</div>
+            <div>
+              <h4>Raytheon Technologies</h4>
+              <p class="role">Software Engineering Intern · Melbourne, FL</p>
+              <p>Worked on AESA weather radar systems by optimizing airborne radar detection algorithms, improving turbulence detection range from 40 to 80 nautical miles.</p>
+              <p>Developed an agentic RAG-based LLM to automate Open Problem Report generation and built retrieval and prompt pipelines using proprietary engineering data.</p>
+            </div>
+          </div>
+
+          <div class="card dated-card">
+            <div class="date">Summer 2025</div>
+            <div>
+              <h4>Saama Technologies</h4>
+              <p class="role">AI/ML Software Engineering Intern · Campbell, CA</p>
+              <p>Engineered Site360, a full-stack AI platform for clinical trial site selection, used to evaluate global rescue study feasibility.</p>
+              <p>Built AWS S3-based ETL pipelines to process 2M+ patient records and developed predictive site-ranking models that improved candidate site selection precision by 40%.</p>
+            </div>
           </div>
         </div>
 
-        <div class="card dated-card">
-          <div class="date">Summer 2025</div>
-          <div>
-            <h4>Saama Technologies</h4>
-            <p class="role">AI/ML Software Engineering Intern · Campbell, CA</p>
-            <p>Engineered Site360, a full-stack AI platform for clinical trial site selection, used to evaluate global rescue study feasibility.</p>
-            <p>Built AWS S3-based ETL pipelines to process 2M+ patient records and developed predictive site-ranking models that improved candidate site selection precision by 40%.</p>
+        <div class="tab-content" id="pm-experience">
+          <div class="card dated-card">
+            <div class="date">2026 — Present</div>
+            <div>
+              <h4>BuzzOrg</h4>
+              <p class="role">Product Lead · Atlanta, GA</p>
+              <p>Leading a team of 4 to design a centralized club application platform for Georgia Tech students and organizations.</p>
+              <p>Translated student and club pain points into product requirements, user stories, wireframes, and MVP features for discovery, applications, and applicant tracking.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card dated-card">
-          <div class="date">January 2026 — May 2026</div>
-          <div>
-            <h4>LMC 3318: Modern Media in the Age of Pandemics</h4>
-            <p class="role">Teaching Assistant · Georgia Tech Europe</p>
-            <p>
-              Supported course logistics, student communication, attendance tracking,
-              Canvas updates, and assignment coordination for a study abroad humanities course.
-            </p>
+          <div class="card dated-card">
+            <div class="date">January 2026 — May 2026</div>
+            <div>
+              <h4>LMC 3318: Modern Media in the Age of Pandemics</h4>
+              <p class="role">Teaching Assistant · Georgia Tech Europe</p>
+              <p>
+                Supported course logistics, student communication, attendance tracking,
+                Canvas updates, and assignment coordination for a study abroad humanities course.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="card dated-card">
-          <div class="date">August 2025 — December 2025</div>
-          <div>
-            <h4>CS 1100: Freshman Leap Seminar</h4>
-            <p class="role">Teaching Assistant · Atlanta, GA</p>
-            <p>
-              Mentored 200+ first-year CS students through academic planning,
-              internships, and career development.
-            </p>
-            <p>
-              Provided detailed feedback on resumes and reflective assignments to improve
-              technical communication and clarity.
-            </p>
+          <div class="card dated-card">
+            <div class="date">August 2025 — December 2025</div>
+            <div>
+              <h4>CS 1100: Freshman Leap Seminar</h4>
+              <p class="role">Teaching Assistant · Atlanta, GA</p>
+              <p>
+                Mentored 200+ first-year CS students through academic planning,
+                internships, and career development.
+              </p>
+              <p>
+                Provided detailed feedback on resumes and reflective assignments to improve
+                technical communication and clarity.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="card dated-card">
-          <div class="date">September 2024 — May 2025</div>
-          <div>
-            <h4>Office of Undergraduate Education and Student Success</h4>
-            <p class="role">Student Assistant · Georgia Tech</p>
-            <p>
-              Supported student-facing communications, office operations, and
-              event-related tasks for Georgia Tech’s undergraduate education programs.
-            </p>
+          <div class="card dated-card">
+            <div class="date">September 2024 — May 2025</div>
+            <div>
+              <h4>Office of Undergraduate Education and Student Success</h4>
+              <p class="role">Student Assistant · Georgia Tech</p>
+              <p>
+                Supported student-facing communications, office operations, and
+                event-related tasks for Georgia Tech’s undergraduate education programs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -163,7 +183,7 @@
             <p>Built Python ETL scripts to ingest UK-IPOP CSVs and map them into FHIR resources using Docker and HAPI FHIR tooling.</p>
             <p>
               Standardized healthcare data into FHIR-compatible profiles and supported REST API querying through scalable HAPI FHIR servers.
-            <p>
+            </p>
           </div>
         </div>
 
@@ -249,60 +269,135 @@
         </div>
       </section>
 
+      <section id="case-analysis" class="reveal">
+        <h3>Case Analysis</h3>
+
+        <p class="intro">
+          A space where I break down real product problems, user pain points, competitive gaps, and possible feature improvements.
+          These case studies help me practice product thinking from both a technical and user-focused perspective.
+        </p>
+
+        <div class="case-grid">
+          <div class="card case-card">
+            <h4>PRD: Improving Spotify Group Listening</h4>
+            <p>
+              Wrote a product requirements document focused on making shared listening more flexible, social, and easier to coordinate.
+              The case includes user stories, MVP scope, success metrics, edge cases, and possible wireframes.
+            </p>
+
+            <div class="case-tags">
+              <span>PRD</span>
+              <span>User Stories</span>
+              <span>Metrics</span>
+              <span>Wireframes</span>
+            </div>
+
+            <a class="project-link" href="#" target="_blank">
+              View Case Study →
+            </a>
+          </div>
+
+          <div class="card case-card">
+            <h4>Competitive Teardown: Club Discovery Platforms</h4>
+            <p>
+              Compared student organization discovery and application platforms to identify gaps in onboarding, search, application tracking,
+              and transparency for both students and club admins.
+            </p>
+
+            <div class="case-tags">
+              <span>Competitive Analysis</span>
+              <span>Market Research</span>
+              <span>Positioning</span>
+            </div>
+
+            <a class="project-link" href="#" target="_blank">
+              View Case Study →
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" class="reveal">
         <h3>Skills</h3>
 
-        <div class="skill-category">
-          <h4>Technical</h4>
+        <div class="tabs">
+          <button class="tab-button active" data-tab="coding-languages">Coding Languages</button>
+          <button class="tab-button" data-tab="tools-stack">Tools & Stack</button>
+          <button class="tab-button" data-tab="product-skills">Product</button>
+          <button class="tab-button" data-tab="data-ml-skills">Data & ML</button>
+        </div>
+
+        <div class="tab-content active" id="coding-languages">
           <div class="skill-grid">
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">Java</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="">C</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="">C++</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">SQL</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="">TypeScript</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">SQL</span>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tools-stack">
+          <div class="skill-grid">
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="">Next.js</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">Node.js</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="">Express.js</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" atl="">Vite</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="">Vite</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">Spring Boot</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">FastAPI</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="">Django</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="">Firebase</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="">AWS</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="">Prisma</span>
+            <span><img src="https://img.icons8.com/color/48/tailwind_css.png" alt="">Tailwind CSS</span>
+            <span><img src="https://img.icons8.com/fluency/48/api-settings.png" alt="">REST APIs</span>
+            <span>♾️ CI/CD</span>
+          </div>
+        </div>
+
+        <div class="tab-content" id="product-skills">
+          <div class="skill-grid">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">Figma</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="">Jira</span>
+            <span><img src="https://img.icons8.com/fluency/48/sprint-iteration.png" alt="">Agile/Scrum</span>
+            <span><img src="https://img.icons8.com/fluency/48/task.png" alt="">Jama</span>
+            <span>User Stories</span>
+            <span>Product Requirements</span>
+            <span>Wireframing</span>
+            <span>Competitive Analysis</span>
+            <span>User Research</span>
+            <span>Feature Prioritization</span>
+            <span>Roadmapping</span>
+          </div>
+        </div>
+
+        <div class="tab-content" id="data-ml-skills">
+          <div class="skill-grid">
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="">TensorFlow</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="">PyTorch</span>
             <span><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="">Hugging Face</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="">scikit-learn</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="">Pandas</span>
             <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="">NumPy</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="">AWS</span>
             <span><img src="https://img.icons8.com/color/48/snowflake.png" alt="">Snowflake</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">Linux</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/subversion/subversion-original.svg" alt="">SVN</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="">Prisma</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</span>
-            <span><img src="https://img.icons8.com/color/48/tailwind_css.png" alt="">Tailwind CSS</span>
-            <span><img src="https://img.icons8.com/fluency/48/api-settings.png" alt="">REST APIs</span>
-            <span><img src="https://img.icons8.com/color/48/google-calendar--v2.png" alt="">Google Calendar API</span>
             <span><img src="https://img.icons8.com/fluency/48/document.png" alt="">Document Parsing</span>
-            <span class="emoji-skill">🔥 FHIR</span>
-            <span class="emoji-skill">♾️ CI/CD</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="">Jira</span>
-            <span><img src="https://img.icons8.com/fluency/48/task.png" alt="">Jama</span>
-            <span><img src="https://img.icons8.com/fluency/48/sprint-iteration.png" alt="">Agile/Scrum</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="">VS Code</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">Figma</span>
+            <span>Machine Learning</span>
+            <span>Predictive Modeling</span>
+            <span>ETL Pipelines</span>
+            <span>🔥 FHIR</span>
           </div>
         </div>
 
-        <div class="skill-category">
+        <div class="skill-category extra-skill-section">
           <h4>Languages</h4>
           <div class="skill-grid">
             <span>English</span>
@@ -311,7 +406,7 @@
           </div>
         </div>
 
-        <div class="skill-category">
+        <div class="skill-category extra-skill-section">
           <h4>Certifications</h4>
           <a class="project-link" href="machine-learning-specialization.pdf" target="_blank">Machine Learning Specialization →</a>
         </div>
