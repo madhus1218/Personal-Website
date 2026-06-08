@@ -85,24 +85,29 @@ const observer = new IntersectionObserver(
 
 revealItems.forEach((item) => observer.observe(item));
 
-const tabButtons = document.querySelectorAll(".tab-button");
+function initializeTabs() {
+  const tabGroups = document.querySelectorAll(".tab-group");
 
-tabButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const targetTab = button.dataset.tab;
-    const parentSection = button.closest("section");
+  tabGroups.forEach((group) => {
+    const buttons = group.querySelectorAll(".tab-button");
+    const contents = group.querySelectorAll(".tab-content");
 
-    const sectionButtons = parentSection.querySelectorAll(".tab-button");
-    const sectionContents = parentSection.querySelectorAll(".tab-content");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-tab");
 
-    sectionButtons.forEach((btn) => btn.classList.remove("active"));
-    sectionContents.forEach((content) => content.classList.remove("active"));
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        contents.forEach((content) => content.classList.remove("active"));
 
-    button.classList.add("active");
+        button.classList.add("active");
 
-    const targetContent = parentSection.querySelector(`#${targetTab}`);
-    if (targetContent) {
-      targetContent.classList.add("active");
-    }
+        const targetContent = group.querySelector(`#${targetId}`);
+        if (targetContent) {
+          targetContent.classList.add("active");
+        }
+      });
+    });
   });
-});
+}
+
+initializeTabs();
