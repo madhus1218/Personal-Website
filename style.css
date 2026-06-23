@@ -408,13 +408,6 @@ p,
   text-decoration: underline;
 }
 
-/* Case studies */
-.case-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.15rem;
-}
-
 /* Skills */
 .skill-category {
   margin-bottom: 1.45rem;
