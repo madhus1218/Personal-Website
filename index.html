@@ -30,7 +30,6 @@
           <a href="#about">--- About</a>
           <a href="#education">--- Education</a>
           <a href="#experience">--- Experience</a>
-          <a href="#research">--- Research</a>
           <a href="#projects">--- Projects</a>
           <a href="#skills">--- Skills</a>
           <a href="#beyond-tech">--- Beyond Tech</a>
@@ -104,7 +103,8 @@
 
         <div class="tab-group">
           <div class="chrome-tabs">
-            <button class="tab-button active" data-tab="swe-experience">Technical</button>
+            <button class="tab-button active" data-tab="swe-experience">Industry</button>
+            <button class="tab-button" data-tab="research">Research</button>
             <button class="tab-button" data-tab="campus-experience">On Campus</button>
             <button class="tab-button" data-tab="leadership">Leadership</button>
           </div>
@@ -127,6 +127,32 @@
                 <p class="role">Data Engineering Intern · Campbell, CA</p>
                 <p>Developed scalable Python and AWS data pipelines to ingest, validate, and standardize 2M+ clinical-trial records for downstream analytics.</p>
                 </div>
+            </div>
+          </div>
+
+          <div class="tab-content active" id="research">
+            <div class="card dated-card">
+            <div class="date">Spring 2025, <br> Fall 2025, <br> Spring 2026</div>
+            <div>
+              <h4>Health Informatics on FHIR Lab</h4>
+              <p class="role">Development Team Researcher · Atlanta, GA</p>
+              <p>Built Python ETL scripts to ingest UK-IPOP CSVs and map them into FHIR resources using Docker and HAPI FHIR tooling.</p>
+              <p>
+                Standardized healthcare data into FHIR-compatible profiles and supported REST API querying through scalable HAPI FHIR servers.
+              </p>
+            </div>
+          </div>
+
+          <div class="card dated-card">
+            <div class="date">Summer 2024</div>
+            <div>
+              <h4>HEALTH-Engine Lab</h4>
+              <p class="role">Student Researcher · Gainesville, FL</p>
+
+              <p>
+                Built medical imaging pipelines to process CT scans and treatment structures for radiotherapy planning, while developing reliable numerical operations across CPU and GPU systems.
+              </p>
+
             </div>
           </div>
 
@@ -190,34 +216,7 @@
         </div>
       </section>
 
-      <section id="research" class="reveal">
-        <h3>Research</h3>
 
-        <div class="card dated-card">
-          <div class="date">Spring 2025, <br> Fall 2025, <br> Spring 2026</div>
-          <div>
-            <h4>Health Informatics on FHIR Lab</h4>
-            <p class="role">Development Team Researcher · Atlanta, GA</p>
-            <p>Built Python ETL scripts to ingest UK-IPOP CSVs and map them into FHIR resources using Docker and HAPI FHIR tooling.</p>
-            <p>
-              Standardized healthcare data into FHIR-compatible profiles and supported REST API querying through scalable HAPI FHIR servers.
-            </p>
-          </div>
-        </div>
-
-        <div class="card dated-card">
-          <div class="date">Summer 2024</div>
-          <div>
-            <h4>HEALTH-Engine Lab</h4>
-            <p class="role">Student Researcher · Gainesville, FL</p>
-
-            <p>
-              Built medical imaging pipelines to process CT scans and treatment structures for radiotherapy planning, while developing reliable numerical operations across CPU and GPU systems.
-            </p>
-
-          </div>
-        </div>
-      </section>
       <section id="projects" class="reveal">
         <h3>Projects</h3>
 
@@ -424,6 +423,18 @@
 
         <div class="card project-card">
           <h4>OpenAPI Generator Open-Source Contribution</h4>
+
+          <p class="project-description">
+            Enhanced C# client generation by fixing oneOf serialization across 3 schema variants and adding regression coverage, preventing generated API clients from producing empty JSON payloads.
+          </p>
+
+          <div class="project-links"> 
+            <a class="project-link" 
+              href="https://github.com/OpenAPITools/openapi-generator/issues/24398" 
+              target="_blank" > 
+              View Merged PR → 
+            </a> 
+          </div>
 
           <p class="project-description">
             Enhanced C# code generation by extending Java-based template logic to support alternative authentication schemes and adding automated regression tests to prevent future failures.
